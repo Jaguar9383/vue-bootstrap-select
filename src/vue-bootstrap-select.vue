@@ -136,12 +136,7 @@ export default {
   watch: {
     value: {
       immediate: true,
-      handler(newVal) {
-        const index = this.options.findIndex(op =>
-          this.isEqualOption(op, newVal)
-        );
-        this.onSelect(newVal, index);
-      }
+      handler() {}
     }
   },
   methods: {
